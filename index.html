@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary-light': '#F0F2F5',
+              'secondary-light': '#FFFFFF',
+              'text-light': '#1C1E21',
+              'accent-light': '#3B82F6',
+              
+              'primary-dark': '#18191A',
+              'secondary-dark': '#242526',
+              'text-dark': '#E4E6EB',
+              'accent-dark': '#60A5FA',
+
+              'brand-gradient-from': '#3B82F6',
+              'brand-gradient-to': '#8B5CF6',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Lexend', 'sans-serif'],
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            },
+            animation: {
+              float: 'float 3s ease-in-out infinite',
+              fadeInUp: 'fadeInUp 0.5s ease-out forwards',
+            },
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lexend:wght@700;800&display=swap" rel="stylesheet">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.12",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.542.0",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.56.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-primary-light dark:bg-primary-dark transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
