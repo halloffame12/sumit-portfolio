@@ -46,7 +46,7 @@ const HomePage: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-3xl transform -rotate-6"></div>
-            <img src="./img/sumitc.png" alt="Profile" className="relative w-48 h-48 lg:w-72 lg:h-72 object-cover rounded-full border-4 border-secondary-light dark:border-secondary-dark shadow-2xl" />
+            <img src="img/sumitc.png" alt="Profile" className="relative w-48 h-48 lg:w-72 lg:h-72 object-cover rounded-full border-4 border-secondary-light dark:border-secondary-dark shadow-2xl" />
           </motion.div>
         </div>
 
